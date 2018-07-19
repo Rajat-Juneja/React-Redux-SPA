@@ -1,0 +1,12 @@
+div.first{
+    padding: 5%;
+    text-align: center;
+}
+
+div.first input, div.first button{
+    margin: 2% 2.5%;
+}
+
+div.first h4{
+    margin-top: 5%;
+}
