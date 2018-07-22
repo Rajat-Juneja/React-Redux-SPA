@@ -1,0 +1,61 @@
+.middle{
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+div.middle button{
+    margin: 2% 1.5% 0;
+    border:none;
+    box-shadow: 0px 4px 0px rgba(0,0,0,0.2);
+}
+
+div.cheese{
+    width: 55%;
+    height: 15px;
+    margin: 1% auto;
+    background: -webkit-gradient(linear,left top,left bottom,from(#f4d004),to(#d6bb22));
+    background: -webkit-linear-gradient(#f4d004,#d6bb22);
+    background: -o-linear-gradient(#f4d004,#d6bb22);
+    background: linear-gradient(#f4d004,#d6bb22);
+    border-radius: 20px;
+}
+
+div.bacon{
+    width: 50%;
+    height: 20px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#bf3813),to(#c45e38));
+    background: -webkit-linear-gradient(#bf3813,#c45e38);
+    background: -o-linear-gradient(#bf3813,#c45e38);
+    background: linear-gradient(#bf3813,#c45e38);
+    margin: 1% auto;
+}
+
+div.downburger{
+    height: 50px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#f08e4a),to(#e27b36));
+    background: -webkit-linear-gradient(#f08e4a,#e27b36);
+    background: -o-linear-gradient(#f08e4a,#e27b36);
+    background: linear-gradient(#f08e4a,#e27b36);
+    border-radius: 0 0 30px 30px;
+    width: 50%;
+    -webkit-box-shadow: inset -15px 0 #c15711;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 1% auto;
+}
+
+div.upburger{
+    height: 55px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#bc581e),to(#e27b36));
+    background: -webkit-linear-gradient(#bc581e,#e27b36);
+    background: -o-linear-gradient(#bc581e,#e27b36);
+    background: linear-gradient(#bc581e,#e27b36);
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    width: 50%;
+    -webkit-box-shadow: inset -15px 0 #c15711;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 1% auto
+}
