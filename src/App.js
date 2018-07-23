@@ -4,7 +4,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { FirstComp } from './Childs/Routes/first';
 import Second from './Childs/Routes/second';
 import {Third} from './Childs/Routes/third';
-import {NavLink,Route} from 'react-router-dom';
+import {NavLink,Route,Switch,Redirect} from 'react-router-dom';
 
 
 class App extends Component {
@@ -48,15 +48,17 @@ class App extends Component {
           </li>
         </ul>
 
-         {/* <Switch> */}
-          <Route path="/" exact component={App}></Route>
+         <Switch>
+          <Route path="/" exact render={()=><h1>Welcome to The HomePage</h1>}></Route>
           <Route path="/first" exact component={FirstComp}></Route>
           <Route path="/second" exact component={Second}></Route>
-          <Route path="/third" exact component={Third}></Route>
+          <Route path="/third" component={Third}></Route>
 
 
-           <Route render={()=><h1>NO PAGE EXIST </h1>}/>
-        {/* </Switch> */}
+           {/* <Route render={()=><h1>NO PAGE EXIST </h1>}/> */}
+           <Redirect to="/"/>
+
+        </Switch>
 
 
       {/* <FirstComp/>  */}
