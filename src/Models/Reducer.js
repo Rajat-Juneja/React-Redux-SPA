@@ -12,7 +12,7 @@ export const reducer = (state={},action) =>{
     }
     else
     if(action.type=="MUL"){
-        let result = parseInt(action.payLoad.first) - parseInt(action.payLoad.second);
+        let result = parseInt(action.payLoad.first) * parseInt(action.payLoad.second);
         state = {...state,result:result};
         return state;
     }

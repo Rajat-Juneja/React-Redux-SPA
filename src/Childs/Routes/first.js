@@ -9,7 +9,8 @@ export class FirstComp extends Component{
         super();
     }
     compute(event){
-        var operation = event.target.getAttribue('myvalue');
+        // var operation = event.target.getAttribue('myvalue');
+        var operation = event.target.attributes.getNamedItem('myvalue').value;
         var fno = this.refs.fno.value;
         var sno = this.refs.sno.value;
         const payLoad = {first:fno,second:sno};
